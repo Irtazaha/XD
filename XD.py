@@ -254,7 +254,6 @@ def cek_apk(session,coki):
     game = [i.text for i in x.find_all("h3")]
     if len(game)==0:
         print('\r\033[1;92m[+]\033[1;91m Sorry there is no Expired Apk')
-        else:
         print('\r[🎮] \033[1;96m ◇ Your Expired Apps ◇ \033[1;91m: \033[1;92m')
         for i in range(len(game)):
             print("\r[%s%s] %s%s"%(N,i+1,game[i].replace("Kedaluwarsa"," Kedaluwarsa"),N))
